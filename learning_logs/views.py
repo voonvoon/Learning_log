@@ -10,6 +10,10 @@ def index(request):
     """The home page for Learning Log"""
     return render(request, 'learning_logs/index.html')
 
+def blog(request):
+    """The Blog"""
+    return render(request, 'learning_logs/blog.html')
+
 @login_required
 def topics(request):
     """Show all topics."""
