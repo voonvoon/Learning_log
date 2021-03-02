@@ -14,6 +14,11 @@ def blog(request):
     """The Blog"""
     return render(request, 'learning_logs/blog.html')
 
+def photo(request):
+    """The photo"""
+    return render(request, 'learning_logs/photo.html')
+
+
 @login_required
 def topics(request):
     """Show all topics."""

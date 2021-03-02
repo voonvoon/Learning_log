@@ -10,6 +10,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     # Blog
     path('blog/', views.blog, name='blog'),
+    # page for photo
+    path('photo/', views.photo, name='photo'),
     # Show all topics.
     path('topics/', views.topics, name='topics'),
     # Detail page for a single topic.
@@ -20,4 +22,5 @@ urlpatterns = [
     path('new_entry/<int:topic_id>/', views.new_entry, name='new_entry'),
     # Page for editing an entry
     path('edit_entry/<int:entry_id>/', views.edit_entry, name='edit_entry'),
+
 ]
